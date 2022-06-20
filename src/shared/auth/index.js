@@ -8,7 +8,7 @@ import { AUTH_CLIENT_ID, AUTH_DOMAIN, LOGOUT_REDIRECT_URI, REDIRECT_URI } from '
  */
 export const authClient = Auth.createClient(
   {
-    strategy: AUTH_STRATEGIES.WEB_8BASE_COGNITO,
+    strategy: AUTH_STRATEGIES.WEB_COGNITO,
     subscribable: true,
   },
   {

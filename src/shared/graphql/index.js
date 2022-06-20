@@ -27,3 +27,24 @@ export const USER_SIGN_UP_MUTATION = gql`
     }
   }
 `;
+
+export const GET_FOOD = gql`
+  query {
+    notesList(first: 10) {
+      items {
+        title
+      }
+    }
+  }
+`;
+
+export const notesQuery = gql`
+  query {
+    notesList(first: 10) {
+      items {
+        title
+        body
+      }
+    }
+  }
+`;

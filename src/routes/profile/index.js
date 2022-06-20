@@ -1,9 +1,11 @@
 import { useQuery } from '@apollo/client';
 
-import { CURRENT_USER_QUERY } from 'shared/graphql';
+import { CURRENT_USER_QUERY, GET_FOOD } from 'shared/graphql';
 
 export const Profile = () => {
   const { data, loading } = useQuery(CURRENT_USER_QUERY);
+  const { food, load } = useQuery(GET_FOOD);
+  console.log(data);
 
   return (
     <>

@@ -4,7 +4,7 @@ import { useAuth } from '8base-react-sdk';
 import ERROR_CODES from '@8base/error-codes';
 import { useApolloClient } from '@apollo/client';
 
-import { CURRENT_USER_QUERY, USER_SIGN_UP_MUTATION } from 'shared/graphql';
+import { CURRENT_USER_QUERY, USER_SIGN_UP_MUTATION, GET_FOOD } from 'shared/graphql';
 import { AUTH_PROFILE_ID } from 'shared/constants';
 
 const authorizeUser = async ({ authClient, apolloClient, history }) => {
