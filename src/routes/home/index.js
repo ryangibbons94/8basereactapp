@@ -1,5 +1,5 @@
 import { useQuery } from '@apollo/client';
-import { CURRENT_USER_QUERY, GET_FOOD } from 'shared/graphql';
+import { CURRENT_USER_QUERY } from 'shared/graphql';
 const GqlClient = require('graphql-request').GraphQLClient;
 import { useState, useEffect } from 'react';
 
